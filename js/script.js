@@ -4,7 +4,7 @@ function generateHTML() {
     const output = document.getElementById('output');
     const renderedOutput = document.getElementById('rendered-output');
 
-    fetch('/templates/template.html')
+    fetch('https://raw.githubusercontent.com/Evankemp07/HTMLcodeblockGen/refs/heads/main/templates/template.html')
         .then((response) => response.text())
         .then((template) => {
             const fullHTML = template
