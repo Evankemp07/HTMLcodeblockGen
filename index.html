@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python to HTML Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+</head>
+<body>
+    <h1>Python to HTML Generator</h1>
+    <p>Enter a description and Python code below, this tool will generate a corresponding HTML codeblock for you.</p>
+    
+    <label for="description">Description:</label>
+    <input type="text" id="description" placeholder="Enter a brief description">
+    
+    <label for="code">Python Code:</label>
+    <textarea id="code" placeholder="Enter your Python code here"></textarea>
+    
+    <button id="generateHTML" onclick="generateHTML()">Generate HTML</button>
+
+    <h2>Rendered Output:</h2>
+    <div id="rendered-output" class="rendered-output">
+        <pre><code id="rendered-output" class="language-python"></code></pre>
+    </div>
+    
+    <h2>Generated HTML:</h2>
+    <div class="output-container">
+        <button id="copy-button" onclick="copyToClipboard()">Copy</button>
+        <pre><code id="output" class="language-html"></code></pre>
+    </div>
+    
+    <div id="notification" class="notification">HTML code copied to clipboard!</div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+h1 {
+    color: #ffb428;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #e0e0e0;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1em;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+input, button {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+pre {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    overflow-x: auto;
+    min-height: 60px;
+    color: #e0e0e0;
+}
+
+code {
+    font-family: "Courier New", Courier, monospace;
+    background-color: transparent !important;
+}
+
+.output-container {
+    position: relative;
+}
+
+#generateHTML {
+    position: relative;
+    background-color: #ff7112;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+#generateHTML:hover {
+    background-color: #ffb428;
+}
+
+#copy-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #27afee;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+#copy-button:hover {
+    background-color: #578ace;
+}
+
+.rendered-output {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    min-height: 60px;
+    color: #e0e0e0;
+}
+
+.rendered-output p {
+    color: #e0e0e0;
+    background-color: transparent;
+    margin: 10px 0;
+}
+
+.rendered-output pre {
+    background-color: transparent !important;
+}
+
+.rendered-output code {
+    background-color: transparent !important;
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+}
+
+.notification.show {
+    opacity: 1;
+    visibility: visible;
+}
