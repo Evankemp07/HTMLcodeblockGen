@@ -8,7 +8,6 @@ This project is a simple webpage that allows users to input Python code and a de
 - Generates HTML with syntax highlighting using [Highlight.js](https://highlightjs.org/).
 - View and copy the generated HTML for your projects.
 
-
 ## How to Use
 
 1. Open the webpage hosted on GitHub Pages.
@@ -19,16 +18,21 @@ This project is a simple webpage that allows users to input Python code and a de
 
 ## Project Structure
 
-.
-├── index.html           # Main HTML file
-├── css/
-│   └── style.css        # CSS file for styling
-├── js/
-│   └── script.js        # JavaScript file for functionality
-├── templates/
-│   └── template.html    # HTML template for generated content
-├── README.md            # Project documentation
+├── index.html
 
+├── css/
+
+│   └── style.css
+
+├── js/
+
+│   └── script.js
+
+├── templates/
+
+│   └── template.html
+
+├── README.md
 
 ## Dependencies
 
