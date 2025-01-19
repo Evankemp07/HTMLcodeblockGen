@@ -18,21 +18,18 @@ This project is a simple webpage that allows users to input Python code and a de
 
 ## Project Structure
 
-├── index.html
-
+```apache
 ├── css/
-
 │   └── style.css
-
 ├── js/
-
 │   └── script.js
-
 ├── templates/
-
 │   └── template.html
-
+├── index.html
 ├── README.md
+├── LICENSE
+```
+
 
 ## Dependencies
 
