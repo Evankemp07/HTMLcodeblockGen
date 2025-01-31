@@ -63,10 +63,16 @@
         <button id="copy-button" onclick="copyToClipboard()">Copy</button>
         <pre><code id="output" class="language-html"></code></pre>
     </div>
+
     
     <div id="notification" class="notification">HTML code copied to clipboard!</div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>  
     <script src="js/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            hljs.highlightAll();
+        });
+    </script>
 </body>
 </html>

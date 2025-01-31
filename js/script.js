@@ -24,11 +24,11 @@ function generateHTML() {
                 .replace('{{language}}', language);
             const simplifiedHTML = `
                 <p>${description}</p>
-                <pre><code class="language-${language}">${code.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</code></pre>
+                <pre><code class="#${language}">${code.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</code></pre>
             `;
 
             renderedOutput.innerHTML = simplifiedHTML;
-            output.textContent = simplifiedHTML;
+            output.textContent = fullHTML;
 
         })
         .catch((error) => {
