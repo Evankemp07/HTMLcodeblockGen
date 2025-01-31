@@ -8,23 +8,57 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
 </head>
 <body>
-    <h1>Python to HTML Generator</h1>
-    <p>Enter a description and Python code below, this tool will generate a corresponding HTML codeblock for you.</p>
+    <h1>Code to HTML CodeBlock Generator</h1>
+    <p>Enter a description and code below, this tool will generate a styled HTML codeblock for you.</p>
     
     <label for="description">Description:</label>
     <input type="text" id="description" placeholder="Enter a brief description">
     
-    <label for="code">Python Code:</label>
-    <textarea id="code" placeholder="Enter your Python code here"></textarea>
+    <label for="code">Code:</label>
+    <textarea id="code" placeholder="Enter your code here"></textarea>
+    <label for="language">Select Language:</label>
+    <select id="language">
+        <option value="python">Python</option>
+        <option value="plaintext">Plain Text</option>
+        <option value="javascript">JavaScript</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="java">Java</option>
+        <option value="c">C</option>
+        <option value="cpp">C++</option>
+        <option value="rust">Rust</option>
+        <option value="go">Go</option>
+        <option value="php">PHP</option>
+        <option value="ruby">Ruby</option>
+        <option value="swift">Swift</option>
+        <option value="kotlin">Kotlin</option>
+        <option value="typescript">TypeScript</option>
+        <option value="bash">Bash</option>
+        <option value="shell">Shell</option>
+        <option value="sql">SQL</option>
+        <option value="r">R</option>
+        <option value="perl">Perl</option>
+        <option value="json">JSON</option>
+        <option value="yaml">YAML</option>
+        <option value="xml">XML</option>
+        <option value="lua">Lua</option>
+        <option value="markdown">Markdown</option>
+        <option value="csharp">C#</option>
+        <option value="haskell">Haskell</option>
+        <option value="objectivec">Objective-C</option>
+        <option value="matlab">MATLAB</option>
+        <option value="dockerfile">Dockerfile</option>
+        <option value="powershell">PowerShell</option>
+    </select>
     
     <button id="generateHTML" onclick="generateHTML()">Generate HTML</button>
 
     <h2>Rendered Output:</h2>
     <div id="rendered-output" class="rendered-output">
-        <pre><code id="rendered-output" class="language-python"></code></pre>
+        <pre><code id="rendered-output"></code></pre>
     </div>
     
-    <h2>Generated HTML:</h2>
+    <h2>Generated HTML Codeblock:</h2>
     <div class="output-container">
         <button id="copy-button" onclick="copyToClipboard()">Copy</button>
         <pre><code id="output" class="language-html"></code></pre>
@@ -32,8 +66,7 @@
     
     <div id="notification" class="notification">HTML code copied to clipboard!</div>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>  
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,16 +1,16 @@
-# Python to HTML CodeBlock Generator
+# Code to HTML CodeBlock Generator
 
-This project is a simple webpage that allows users to input Python code and a description, then generates a corresponding HTML CodeBlock with syntax highlighting.
+This project is a simple webpage that allows users to input code and a description, then generates a corresponding HTML CodeBlock with syntax highlighting.
 
 ## Features
 
 - Includes a description for your code.
-- Generates HTML with syntax highlighting using [Highlight.js](https://highlightjs.org/).
+- Generates a HTML codeblock with syntax highlighting using [Highlight.js](https://highlightjs.org/).
 - View and copy the generated HTML for your projects.
 
 ## How to Use
 
-1. Open the webpage hosted on GitHub Pages.
+1. Open the webpage hosted on [GitHub Pages](https://evankemp07.github.io/HTMLcodeblockGen/ "CodeBlockGenerator").
 2. Fill in the **Description** field with a brief explanation of the code.
 3. Paste your **Python code** into the provided textarea.
 4. Click the **Generate HTML** button.
@@ -29,7 +29,6 @@ This project is a simple webpage that allows users to input Python code and a de
 ├── README.md
 ├── LICENSE
 ```
-
 
 ## Dependencies
 
